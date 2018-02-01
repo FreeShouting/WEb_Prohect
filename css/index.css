@@ -1,0 +1,3868 @@
+/**
+ * Created by zwl on 2017/8/2.
+ */
+/*通配符开始*/
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: #f6f6f6
+}
+
+/*头部开始*/
+header{
+   width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+header .all_header{
+    background: #f1f1f1;
+    height: 35px;
+    width: 100%;
+}
+/*头部的上半部分导航条*/
+header .header_top{
+    width: 1210px;
+    height: 35px;
+    margin:0 auto;
+    background: #f1f1f1;
+}
+/*上部分左边导航条的部分*/
+.header_top .left{
+    width: 200px;
+    float: left;
+}
+.header_top .left ul{
+    width: 200px;
+
+}
+.header_top .left ul li{
+    padding-left: 40px;
+    line-height: 34px;
+    display: inline-block;
+    background: url("../images/nav_05.jpg") no-repeat;
+    background-position: 9px 5px;
+}
+ .header_top .left ul li a{
+     text-decoration: none;
+    font-size: 15px;
+     color: #666666;
+ }
+
+.header_top .left ul li a:hover{
+    color: #d2412b;
+}
+
+.header_top .right{
+    width: 840px;
+    height: 35px;
+    float: right;
+}
+
+.header_top .right ul{
+    width: 840px;
+    height: 35px;
+    list-style: none;
+}
+
+.header_top .right ul li{
+    display: inline-block;
+    padding-left: 23px;
+    padding-right: 5px;
+    line-height: 33px;
+}
+.header_top .right ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #666666;
+}
+.header_top .right ul li a:hover{
+    color: #d2412b;
+}
+
+.header_top .right .zc{
+    background: url("../images/nav_06.jpg") no-repeat;
+    background-position: 65px 8px;
+    padding-left: 10px;
+}
+.header_top .right .zc a{
+    color: #d2412b;
+}
+.header_top .right .order{
+    background: url("../images/nav_06.jpg") no-repeat;
+    background-position:65px 8px;
+    padding-left: 10px;
+}
+.header_top .right .my{
+    background: url("../images/nav_09.jpg") no-repeat;
+    background-position:58px 15px;
+     padding-left: 4px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.my .my_content{
+    position: absolute;
+    border: 1px solid #dddddd;
+    border-top:none;
+    width: 300px;
+    height: 120px;
+    right: -225px;
+    display: none;
+    background: #ffffff;
+}
+.right .my:hover{
+    background: #ffffff;
+}
+.right .my:hover .my_content{
+    display:block;
+}
+/*（1）左边的大盒子*/
+.my_content .nr_s{
+   width: 250px;
+    overflow: hidden;
+    clear: both;
+
+}
+/*盒子的左边*/
+.nr_s .z{
+    width: 100px;
+    height: 70px;
+    float: left;
+    margin-left: 5px;
+}
+
+.nr_s .z p {
+    height: 20px;
+    line-height: 33px;
+}
+/*盒子的右边*/
+.nr_s .y{
+    width: 100px;
+    height: 70px;
+    float: right;
+    margin-left: 30px;
+}
+.nr_s .y p{
+    height: 20px;
+    line-height: 33px;
+}
+/*盒子的下边*/
+.nr_x{
+    width: 295px;
+    height: 40px;
+    border-top: 1px solid #dddddd;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.nr_x .nr_x_z{
+    width: 100px;
+    height: 35px;
+    float: left;
+}
+.nr_x .nr_x_z p{
+    line-height: 18px;
+}
+.nr_x .nr_x_y{
+    width: 100px;
+    height: 35px;
+    float: left;
+    margin-left: 45px;
+}
+.nr_x .nr_x_y p{
+    line-height: 18px;
+}
+
+.header_top .right .vip{
+    background: url("../images/nav_06.jpg") no-repeat;
+    background-position:3px 8px;
+    padding-left: 10px;
+}
+.header_top .right .cg{
+    background: url("../images/nav_06.jpg") no-repeat;
+    background-position:3px 8px;
+    padding-left: 12px;
+}
+
+.header_top .right .phone{
+    background: url("../images/nav_03.jpg")no-repeat;
+    background-position:3px 3px;
+    padding-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+ .right .phone .phone_xl{
+     width: 230px;
+     height: 200px;
+     border: 1px solid #dddddd;
+     border-top: none;
+     position: absolute;
+     display: none;
+     left:-1px;
+     background: #ffffff;
+ }
+.right .phone:hover{
+    background: #ffffff;
+}
+ .right .phone:hover .phone_xl{
+     display: block;
+ }
+/*(2)下拉框的上面的盒子*/
+.right .phone_xl .phone_xl_s{
+    width: 225px;
+    height: 100px;
+    margin-left: 4px;
+    border-bottom:1px dashed #dddddd;
+}
+/*左边盒子的二维码*/
+.right .phone_xl_s .phone_z{
+    width: 84px;
+    height: 84px;
+    margin-top: 5px;
+    float: left;
+}
+/*右边盒子的小图标*/
+.right .phone_xl_s .phone_y{
+    width: 135px;
+    margin-top: 5px;
+    float: right;
+}
+.phone_xl .phone_y p{
+    line-height: 18px;
+}
+.phone_xl .phone_y p a{
+   font-size: 5px;
+}
+
+.phone_xl .phone_y p span{
+    color: #d2412b;
+}
+.phone_y .pic{
+    width: 40px;
+    float: left;
+    margin-left: 3px;
+
+}
+/*图片的通用高度和宽度*/
+.pic_z{
+    width: 22px;
+    height: 27px;
+}
+/*文字大小的设置*/
+.phone_y .pic p{
+    line-height:13px;
+    font-size: 3px;
+    margin-left: 4px;
+}
+
+.phone_y .pic img{
+    padding-left: 7px;
+    padding-top: 3px;
+}
+
+.right .phone_xl .phone_xl_x{
+    width: 225px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+/*左边盒子的二维码*/
+.right .phone_xl_x .phone_z{
+    width: 84px;
+    height: 84px;
+    margin-top: 5px;
+    float: left;
+}
+/*右边盒子的小图标*/
+.right .phone_xl_x .phone_y{
+    width: 135px;
+    height: 85px;
+    margin-top: 5px;
+    float: right;
+}
+.phone_xl .phone_y p{
+    line-height: 18px;
+}
+.phone_xl .phone_y p a{
+    font-size: 5px;
+}
+.phone_xl .phone_y p span{
+    color: #d2412b;
+}
+.phone_y .pic{
+    width: 40px;
+    float: left;
+    margin-left: 3px;
+
+}
+/*图片的通用高度和宽度*/
+.pic_z{
+    width: 22px;
+    height: 27px;
+}
+.phone_y .pic p{
+    line-height:13px;
+    font-size: 3px;
+    margin-left: 4px;
+}
+
+.phone_y .pic img{
+    padding-left: 7px;
+    padding-top: 3px;
+}
+/*（3）关注京东的下拉框*/
+.header_top .right .care{
+    background: url("../images/nav_09.jpg") no-repeat;
+    background-position:58px 15px;
+    padding-left: 4px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+.header_top .right .care .erweima{
+    width: 75px;
+    height: 100px;
+    border: 1px solid #dddddd;
+    position: absolute;
+    border-top: none;
+    left: -1px;
+    display: none;
+    background: #ffffff;
+}
+.header_top .right .care .erweima .sao{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.erweima p{
+    width: 60px;
+    height: 30px;
+    line-height: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.header_top .right .care:hover{
+    background: #ffffff;
+}
+.header_top .right .care:hover .erweima{
+    display: block;
+}
+/*help的下拉框*/
+.header_top .right .help{
+    background: url("../images/nav_09.jpg") no-repeat;
+    background-position:58px 15px;
+    padding-left: 4px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.header_top .right .help .customer{
+    width: 160px;
+    height: 220px;
+    border:1px solid #dddddd;
+    border-top: none;
+    display: none;
+    position: absolute;
+    left: -1px;
+    background: #ffffff;
+}
+
+.header_top .right .help .customer .customer_s{
+    width: 150px;
+    height: 115px;
+    margin-left: 5px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.help .customer .customer_s h6{
+    margin-top: -5px;
+    height: 25px;
+}
+.header_top .customer_s .customer_lb{
+    height: 70px;
+    width: 62px;
+    float: left;
+    line-height: 20px;
+}
+.header_top .customer_s .customer_lb1{
+    height: 70px;
+    width: 65px;
+    float: right;
+    line-height: 20px;
+}
+
+.header_top .right .help .customer .customer_x{
+    width: 150px;
+    height: 100px;
+    margin-left: 5px;
+}
+
+.header_top .customer_x .customer_lb{
+    height: 70px;
+    width: 62px;
+    float: left;
+    line-height: 20px;
+}
+.header_top .customer_x .customer_lb1{
+    height: 70px;
+    width: 65px;
+    float: right;
+    line-height: 20px;
+}
+.header_top .right .help:hover{
+    background: #ffffff;
+}
+
+.header_top .right .help:hover .customer{
+    display: block;
+}
+/*网站导航的下拉框包括四个下拉列表*/
+.header_top .right .index{
+    background: url("../images/nav_09.jpg") no-repeat;
+    background-position:58px 15px;
+    padding-left: 4px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+.header_top .right .index .daohang{
+    width: 1170px;
+    height: 220px;
+    border: 1px solid #dddddd;
+    border-top: none;
+    position: absolute;
+    left: -1095px;
+    display: none;
+    background: #ffffff;
+}
+.index .daohang .special{
+    width: 335px;
+    float: left;
+    margin-left: 30px;
+    border-right: 1px solid #dddddd;
+}
+/*频道的下拉框*/
+.index .daohang .channel{
+    width: 220px;
+    float: left;
+    margin-left: 10px;
+    border-right: 1px solid #dddddd;
+}
+.index .daohang .channel p{
+    margin-left: 5px;
+    font-weight: 600;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #000000;
+}
+.index .channel .lb1{
+    width: 73px;
+    height: 170px;
+    float: left;
+}
+.index .channel .lb1 li{
+    line-height: 5px;
+    padding-left: 0;
+}
+.index .channel .lb1 .ff{
+    padding-right: 25px;
+}
+
+/*生活的下拉框*/
+.index .daohang .life{
+    width: 260px;
+    float: left;
+    margin-left: 10px;
+    border-right: 1px solid #dddddd;
+    background: #ffffff;
+}
+.index .daohang .life p{
+    margin-left: 5px;
+    font-weight: 600;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #000000;
+}
+.index .life .lb2{
+    width: 83px;
+    height: 170px;
+    float: left;
+}
+.index .life .lb2 li{
+    line-height: 5px;
+    padding-left: 0;
+}
+.index .life .lb2 .dd{
+    padding-right: 30px;
+}
+/*更多精彩的下拉框*/
+.index .daohang .more{
+    width: 280px;
+    float: left;
+    margin-left: 10px;
+    background: #ffffff;
+}
+.index .daohang .more p{
+    margin-left: 5px;
+    font-weight: 600;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #000000;
+}
+.index .more .lb3{
+    width: 90px;
+    height: 170px;
+    float: left;
+}
+.index .more .lb3 li{
+    line-height: 5px;
+    padding-left: 0;
+}
+/*特色主题的下拉框*/
+.index .special p{
+    height: 30px;
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 5px;
+    color:#000000;
+}
+.index .special .lb{
+    width: 83px;
+    height: 170px;
+    float: left;
+}
+.index .special .lb li{
+    line-height: 5px;
+    padding-left: 0;
+}
+.index .special .lb .bb{
+    padding-right: 40px;
+}
+.index .special .lb .cc{
+    padding-right: 40px;
+}
+.index .special .lb ul li a{
+    font-size: 10px;
+}
+.header_top .right .index:hover{
+    background: #ffffff;
+}
+.header_top .right .index:hover .daohang{
+    display: block;
+}
+
+header .guanggao{
+    width: 1348px;
+    height: 90px;
+}
+header .aosika{
+    width: 1348px;
+    height: 90px;
+    position: relative;
+}
+header .cha{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+/*header_center中部分开始书写*/
+header .header_center{
+    width:1210px;
+    height: 120px;
+    margin: 0 auto;
+}
+/*logo的图片*/
+.header_center .logo_img{
+    margin-top: 35px;
+    width: 296px;
+    height: 74px;
+    float: left;
+}
+
+/*搜索框的部分*/
+.header_center .search{
+    width: 500px;
+    height: 65px;
+    float: left;
+    margin-top: 45px;
+   margin-left: 35px;
+
+}
+
+.header_center .search form {
+    width: 100%;
+    height: 43px;
+    border: 2px solid #c81522;
+    position: relative;
+}
+
+
+.header_center .search form input{
+    width: 470px;
+    height: 43px;
+    outline: none;
+    border: 0;
+    padding: 0 100px 0 10px;
+    box-sizing: border-box;
+
+}
+ .header_center .search button{
+     position: absolute;
+     right: 0;
+     top: 0;
+     height: 45px;
+     width: 50px;
+     border: none;
+     cursor: pointer;
+     background:  #c81522;
+     border-left: 1px solid #c81522;
+ }
+
+.header_center .option ul {
+    list-style: none;
+}
+.header_center .option ul li{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.header_center .option ul li a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #666666;
+}
+
+.header_center .option .quan a{
+    color: #ff0004;
+}
+
+
+/*购物车的部分*/
+.header_center .shopping_cart{
+    width: 200px;
+    height: 50px;
+    border: 1px solid #dcd5dc;
+    float: left;
+    margin-top: 45px;
+     margin-left: 40px;
+    position: relative;
+    background: #ffffff;
+}
+
+.header_center .shopping_cart .shopping{
+    width: 280px;
+    height: 66px;
+    border: 1px solid #dcd5dc;
+    border-top: none;
+    position: absolute;
+    bottom: -62px;
+    left: -81px;
+    display: none;
+    background: #ffffff;
+
+}
+
+.header_center .shopping_cart:hover .shopping{
+    display: block;
+}
+
+.header_center .shopping_cart .cart{
+    list-style: none;
+}
+
+.header_center .shopping_cart .cart li{
+    padding-left: 60px;
+    padding-top: 10px;
+    background: url("../images/shopping_06.jpg")no-repeat;
+    background-position: 30px 10px;
+}
+
+.header_center .shopping_cart .cart li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #d02f38;
+}
+
+.shopping_cart .cart1{
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+.header_center .shopping .cart2{
+   width: 78px;
+    height: 66px;
+    float: left;
+}
+
+.header_center .shopping p{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.header_center .shopping p a{
+    font-size: 10px;
+    text-decoration: none;
+     color: #999999;
+}
+
+.header_center .shopping .cart3{
+    width: 200px;
+    height: 66px;
+    float: right;
+}
+/*头部的底部开始书写*/
+header .header_bottom{
+    width: 1210px;
+    margin: 20px auto 0;
+}
+/*头部下面最上面的代码*/
+header .header_bottom .top{
+     width: 1210px;
+     height: 40px;
+}
+
+header .top .top_option{
+    width: 560px;
+    float: left;
+    margin-left: 285px;
+}
+
+header .top .top_picture{
+    width: 186px;
+    height: 40px;
+    float: right;
+}
+
+header .header_bottom .top .top_option{
+   list-style: none;
+}
+
+header .header_bottom .top .top_option li{
+    display: inline-block;
+    margin-left: 12px;
+    line-height: 38px;
+}
+header .header_bottom .top .top_option li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #545454;
+    font-weight: 600;
+}
+header .header_bottom .top .top_option li a:hover{
+    color: #f10214;
+}
+header .header_bottom .center{
+    width: 1210px;
+    overflow: hidden;
+    clear: both;
+}
+
+header .header_bottom .center .z{
+     width: 220px;
+    height: 475px;
+    background: #6e6568;
+    float: left;
+}
+header .header_bottom .center .z ul{
+  list-style: none;
+}
+header .header_bottom .center .z ul li {
+    padding-left: 15px;
+    line-height: 28px;
+}
+header .header_bottom .center .z ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+}
+header .header_bottom .center .z ul li a:hover{
+    color: #f10214;
+}
+
+/*第一个右边的弹框*/
+header .header_bottom .center .z .home{
+    position: relative;
+}
+header .header_bottom .center .z .home:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .home .home1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: 0;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .home1 .xl_z{
+      width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .home1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .home1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .home1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .home1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .home1 .xl_y .picture{
+    margin-top: 20px;
+}
+/*弹框左边的头部的部分*/
+header .header_bottom .home1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .home1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.home1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.home1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.home1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.home1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.home1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .home:hover .home1{
+    display: block;
+}
+
+/*第二个弹框*/
+header .header_bottom .center .z .yunying{
+    position: relative;
+}
+header .header_bottom .center .z .yunying:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .yunying .yunying1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -30px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .yunying1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .yunying1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .yunying1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .yunying1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .yunying1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .yunying1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .yunying1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .yunying1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.yunying1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.yunying1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.yunying1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.yunying1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.yunying1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .yunying:hover .yunying1{
+    display: block;
+}
+/*第三个弹框*/
+header .header_bottom .center .z .computure{
+    position: relative;
+}
+header .header_bottom .center .z .computure:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .computure .computure1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -58px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .computure1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .computure1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .computure1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .computure1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .computure1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .computure1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .computure1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .computure1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.computure1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.computure1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.computure1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.computure1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.computure1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .computure:hover .computure1{
+    display: block;
+}
+/*第四个弹框*/
+header .header_bottom .center .z .jiaju{
+    position: relative;
+}
+header .header_bottom .center .z .jiaju:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .jiaju .jiaju1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -88px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .jiaju1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .jiaju1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .jiaju1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .jiaju1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .jiaju1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .jiaju1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .jiaju1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .jiaju1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.jiaju1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.jiaju1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.jiaju1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.jiaju1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.jiaju1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .jiaju:hover .jiaju1{
+    display: block;
+}
+/*第五个弹框*/
+header .header_bottom .center .z .suit{
+    position: relative;
+}
+header .header_bottom .center .z .suit:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .suit .suit1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -116px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .suit1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .suit1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .suit1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .suit1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .suit1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .suit1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .suit1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .suit1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.suit1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.suit1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.suit1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.suit1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.suit1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .suit:hover .suit1{
+    display: block;
+}
+/*第6个弹框*/
+header .header_bottom .center .z .beauty{
+    position: relative;
+}
+header .header_bottom .center .z .beauty:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .beauty .beauty1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -145px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .beauty1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .beauty1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .beauty1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .beauty1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .beauty1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .beauty1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .beauty1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .beauty1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.beauty1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.beauty1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.beauty1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.beauty1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.beauty1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .beauty:hover .beauty1{
+    display: block;
+}
+
+/*第七个弹框*/
+header .header_bottom .center .z .shoe{
+    position: relative;
+}
+header .header_bottom .center .z .shoe:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .shoe .shoe1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -175px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .shoe1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .shoe1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .shoe1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .shoe1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .shoe1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .shoe1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .shoe1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .shoe1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.shoe1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.shoe1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.shoe1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.shoe1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.shoe1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .shoe:hover .shoe1{
+    display: block;
+}
+
+/*第八个弹框*/
+
+header .header_bottom .center .z .huwai{
+    position: relative;
+}
+header .header_bottom .center .z .huwai:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .huwai .huwai1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -205px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .huwai1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .huwai1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .huwai1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .huwai1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .huwai1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .huwai1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .huwai1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .huwai1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.huwai1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.huwai1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.huwai1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.huwai1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.huwai1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .huwai:hover .huwai1{
+    display: block;
+}
+/*第九个弹框*/
+header .header_bottom .center .z .qiche{
+    position: relative;
+}
+header .header_bottom .center .z .qiche:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .qiche .qiche1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -234px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .qiche1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .qiche1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .qiche1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .qiche1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .qiche1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .qiche1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .qiche1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .qiche1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.qiche1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.qiche1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.qiche1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.qiche1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.qiche1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .qiche:hover .qiche1{
+    display: block;
+}
+
+/*第十个弹框*/
+header .header_bottom .center .z .wanju{
+    position: relative;
+}
+header .header_bottom .center .z .wanju:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .wanju .wanju1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -265px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .wanju1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .wanju1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .wanju1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .wanju1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .wanju1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .wanju1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .wanju1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .wanju1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.wanju1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.wanju1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.wanju1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.wanju1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.wanju1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .wanju:hover .wanju1{
+    display: block;
+}
+/*第十一个弹框*/
+
+header .header_bottom .center .z .wine{
+    position: relative;
+}
+header .header_bottom .center .z .wine:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .wine .wine1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -295px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .wine1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .wine1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .wine1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .wine1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .wine1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .wine1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .wine1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .wine1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.wine1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.wine1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.wine1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.wine1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.wine1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .wine:hover .wine1{
+    display: block;
+}
+/*第十二个弹框*/
+
+header .header_bottom .center .z .hua{
+    position: relative;
+}
+header .header_bottom .center .z .hua:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .hua .hua1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -320px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .hua1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .hua1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .hua1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .hua1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .hua1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .hua1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .hua1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .hua1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.hua1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.hua1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.hua1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.hua1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.hua1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .hua:hover .hua1{
+    display: block;
+}
+
+/*第十三个弹框*/
+header .header_bottom .center .z .yinyao{
+    position: relative;
+}
+header .header_bottom .center .z .yinyao:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .yinyao .yinyao1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -355px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .yinyao1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .yinyao1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .yinyao1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .yinyao1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .yinyao1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .yinyao1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .yinyao1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .yinyao1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.yinyao1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.yinyao1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.yinyao1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.yinyao1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.yinyao1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .yinyao:hover .yinyao1{
+    display: block;
+}
+
+/*第十四个弹框*/
+header .header_bottom .center .z .tushu{
+    position: relative;
+}
+header .header_bottom .center .z .tushu:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .tushu .tushu1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -380px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .tushu1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .tushu1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .tushu1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .tushu1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .tushu1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .tushu1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .tushu1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .tushu1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.tushu1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.tushu1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.tushu1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.tushu1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.tushu1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .tushu:hover .tushu1{
+    display: block;
+}
+/*第十五个弹框*/
+header .header_bottom .center .z .jiudian{
+    position: relative;
+}
+header .header_bottom .center .z .jiudian:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .jiudian .jiudian1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -410px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .jiudian1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .jiudian1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .jiudian1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .jiudian1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .jiudian1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .jiudian1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .jiudian1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .jiudian1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.jiudian1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.jiudian1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.jiudian1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.jiudian1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.jiudian1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .jiudian:hover .jiudian1{
+    display: block;
+}
+
+/*第十六个弹框*/
+header .header_bottom .center .z .baoxian{
+    position: relative;
+}
+header .header_bottom .center .z .baoxian:hover{
+    background: #999395;
+}
+header .header_bottom .center .z .baoxian .baoxian1{
+    width: 990px;
+    position: absolute;
+    border: 1px solid #dcd5dc;
+    top: -436px;
+    left: 220px;
+    display: none;
+    background: #ffffff;
+}
+header .header_bottom .baoxian1 .xl_z{
+    width: 800px;
+    float: left;
+}
+/*弹框右边图片的部分*/
+header .header_bottom .baoxian1 .xl_y{
+    width: 170px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+header .header_bottom .baoxian1 .xl_y .picture1{
+    width: 170px;
+    height: 150px;
+}
+header .header_bottom .baoxian1 .xl_y .mei{
+    width: 83px;
+    height: 35px;
+    float: left;
+    margin-top: 2px;
+}
+header .header_bottom .baoxian1 .xl_y .sie{
+    width: 83px;
+    height:35px;
+    float: right;
+    margin-top: 2px;
+}
+header .header_bottom .baoxian1 .xl_y .picture{
+    margin-top: 20px;
+}
+
+/*弹框左边的头部的部分*/
+header .header_bottom .baoxian1 .xl_z .catalog{
+    width: 620px;
+    height:35px;
+}
+header .header_bottom .baoxian1 .xl_z .TV{
+    width: 790px;
+    border-bottom: 1px solid #dddddd;
+}
+.baoxian1 .xl_z .TV .tv1 li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../images/nav_06.jpg")no-repeat;
+    background-position: 0 3px;
+}
+.baoxian1 .xl_z .TV .tv1 li a{
+    color: #666666;
+}
+.baoxian1 .xl_z .TV .tv1 .dianshi{
+    padding-right:25px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.baoxian1 .xl_z .TV .tv1 .xiyiji{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+.baoxian1 .xl_z .TV .tv1 .dadian{
+    padding-right: 15px;
+    background: url("../images/shopping_10.jpg")no-repeat;
+    background-position: 50px 8px;
+}
+header .header_bottom .center .z .baoxian:hover .baoxian1{
+    display: block;
+}
+
+
+
+
+
+
+/*头部的通用样式*/
+.catalog p{
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.catalog span{
+    background: #6e6568;
+      padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.catalog span img{
+    padding-left: 10px;
+}
+
+
+/*下部的中间的部分*/
+header .header_bottom .middle{
+    width: 800px;
+    float: left;
+    margin-left: 10px;
+}
+/*中间部分的banner图片*/
+header .header_bottom .middle .banner{
+    width: 790px;
+    height: 340px;
+    background: url("../images/banner.jpg");
+}
+@-webkit-keyframes  background-img{
+    0%{
+
+       background: url("../images/banner.jpg");
+    }
+    10%{
+        background: url("../images/banner1.jpg");
+
+    }
+    20%{
+        background: url("../images/banner2.jpg");
+
+    }
+    80%{
+        background: url("../images/banner3.jpg");
+
+    }
+    100%{
+        background: url("../images/banner4.jpg");
+    }
+}
+.banner:hover{
+    -webkit-animation-name:background-img;
+    -webkit-animation-duration:15s;
+    -webkit-animation-timing-function:linear;
+    /*无限重复播放*/
+    -webkit-animation-iteration-count:infinite;
+}
+header .header_bottom .middle .middle_bottom{
+    width: 790px;
+    margin-top: 5px;
+}
+header .header_bottom .middle .middle_bottom .middle_bottom_z{
+    width: 390px;
+    height: 140px;
+    float: left;
+
+}
+header .header_bottom .middle .middle_bottom .middle_bottom_y{
+    width: 390px;
+    height: 140px;
+    float: right;
+    margin-left: 10px;
+}
+
+
+
+/*头部下部的右边的部分*/
+header .header_bottom .y{
+    width:170px;
+    height: 475px;
+    float: right;
+    background: #ffffff;
+}
+header .header_bottom .y .y_top{
+    width: 170px;
+    height: 110px;
+    border-bottom: 1px solid #dcd5dc;
+}
+
+header .header_bottom .y .y_top .y_top_z{
+    width: 50px;
+    height: 50px;
+    margin-top:15px;
+    float: left;
+}
+
+header .header_bottom .y .y_top .y_top_y{
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+    float: right;
+}
+header .header_bottom .y .y_top .y_top_y p{
+    font-size: 12px;
+    color:#000000;
+    margin-top: 5px;
+}
+header .header_bottom .y .y_top .y_top_y p a{
+    font-size: 12px;
+    color:#000000;
+    text-decoration: none;
+
+}
+header .header_bottom .y .y_top .y_top_x{
+    width: 160px;
+    clear: both;
+    margin-top:20px;
+}
+header .header_bottom .y .y_top .y_top_x span{
+    border: 2px solid #e01222;
+    font-size: 13px;
+    display: inline-block;
+   margin-left: 4px;
+    margin-top: 5px;
+    padding: 0 5px 0 5px;
+}
+header .header_bottom .y .y_top .y_top_x span a{
+    color: #e01222;
+    text-decoration: none;
+}
+header .header_bottom .y .y_top .y_top_x span a:hover{
+    color: #ffffff;
+}
+header .header_bottom .y .y_top .y_top_x span:hover{
+    background: #e01222;
+}
+/*header最右边的中间的部分*/
+header .header_bottom .y .y_z{
+    width: 160px;
+    height: 120px;
+    margin-top: 5px;
+}
+
+header .header_bottom .y .y_z_s{
+    width: 160px;
+    height: 25px;
+    border-bottom:1px solid #dcd5dc ;
+}
+
+.y_z .y_z_s ul{
+    list-style: none;
+}
+
+.y_z .y_z_s ul li{
+    float: left;
+    padding-left: 5px;
+}
+.y_z .y_z_s ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #b6bacc;
+}
+.y_z .y_z_s ul li a:hover{
+    text-decoration: underline #e01222;
+}
+.y_z .y_z_s ul .geng{
+    padding-left: 50px;
+}
+.y_z .y_z_s ul .grap{
+    padding-right: 5px;
+    border-right: 1px solid darkgrey;
+}
+header .header_bottom .y .y_z_z{
+    width: 160px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.y_z .y_z_z ul{
+    list-style: none;
+}
+.y_z .y_z_z ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+.y_z .y_z_z ul li a:hover{
+    color: #e01222;
+}
+/*header下部分最右边的最下面的部分*/
+header .header_bottom .y .y_bottom{
+    height: 220px;
+    width: 170px;
+    margin-top: 10px;
+}
+.y_bottom .y_bottom_s{
+    height: 30px;
+    width: 170px;
+    border-top: 1px solid #dcd5dc;
+}
+.y_bottom .y_bottom_s ul{
+    list-style: none;
+}
+.y_bottom .y_bottom_s ul li{
+    float: left;
+    padding-right: 6px;
+    padding-left: 5px;
+
+}
+.y_bottom .y_bottom_s ul .hua{
+    border-right: 1px solid #dcd5dc;
+}
+
+.y_bottom .y_bottom_s ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+}
+.y_bottom .y_bottom_s ul li a:hover{
+    color: #e01222;
+}
+
+
+.y_bottom .y_bottom_x{
+    width: 170px;
+    height: 190px;
+}
+
+.y_bottom .y_bottom_x ul{
+  list-style: none;
+}
+.y_bottom .y_bottom_x ul li{
+    float: left;
+}
+.y_bottom .y_bottom_x ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 10px;
+}
+.y_bottom .y_bottom_x ul li a:hover{
+    color: #e01222;
+}
+.y_bottom .y_bottom_x .dan{
+    color: #000000;
+    font-size: 12px;
+    margin-top:10px;
+    clear: both;
+
+}
+
+.y_bottom .y_bottom_x .dan1{
+    margin-left: 15px;
+}
+.y_bottom .y_bottom_x .city{
+    width: 150px;
+    height: 20px;
+    border: 1px solid #dcd5dc;
+    margin-top: 10px;
+}
+.y_bottom .y_bottom_x .city input{
+    padding-top: 5px;
+    padding-left: 5px;
+    border: 0;
+    outline: none;
+}
+.y_bottom .y_bottom_x .city span{
+    color: #000000;
+    font-size: 12px;
+    padding: 4px 5px 0 5px;
+    background: #f5f5f5;
+}
+.y_bottom .y_bottom_x button{
+    margin-top: 15px;
+    background: #e01222;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.y_bottom .y_bottom_x a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #537ddc;
+}
+
+/*左边侧栏的部分*/
+.contract{
+    height: 300px;
+    width: 40px;
+    margin-left: 20px;
+    position: fixed;
+    left: -10px;
+    top:100px;
+}
+.contract .enjoy{
+    height: 42px;
+    width:40px;
+   background: #918888;
+    text-align: center;
+    border-bottom: 2px solid #b1aaaa;
+}
+.contract .enjoy:hover{
+    background: #e01222;
+}
+.enjoy a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+.enjoy1 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contract .enjoy1{
+    height: 30px;
+    padding-top: 5px;
+    width:40px;
+    background: #918888;
+    text-align: center;
+    border-bottom: 2px solid #b1aaaa;
+}
+
+.contract .enjoy2{
+    height: 35px;
+    padding-top: 5px;
+    width:40px;
+    background: #5e4a4a;
+    text-align: center;
+}
+.enjoy2 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+.enjoy2 img{
+    padding-bottom: 15px;
+}
+/*section中间的部分*/
+section{
+    width: 1210px;
+    overflow: hidden;
+    clear: both;
+    margin: 10px auto 0;
+}
+
+section .section_top{
+    width: 1210px;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    background: #ffffff;
+}
+section .section_top .dian{
+    position: absolute;
+    left: 5px;
+    top: 130px;
+    cursor: pointer;
+}
+section .section_top .dian1{
+    position: absolute;
+    right: 215px;
+    top: 130px;
+    cursor: pointer;
+}
+
+
+section .section_top .miao_logo{
+    width: 1210px;
+    height: 55px;
+    background: #d50817;
+}
+
+section .miao_shop{
+    width: 950px;
+    height: 230px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+section .miao_shop .miaosha_shop1{
+    width: 190px;
+    height: 230px;
+    border-right: 1px solid #e7e7e7;;
+    background: #ffffff;
+}
+section .miao_shop .miaosha_shop2{
+    width: 190px;
+    height: 230px;
+    background: #ffffff;
+    border-right: 1px solid #e7e7e7;;
+}
+section .miao_shop .miaosha_shop3{
+    width: 190px;
+    height: 230px;
+    background: #ffffff;
+    border-right: 1px solid #e7e7e7;;
+}
+section .miao_shop .miaosha_shop4{
+    width: 190px;
+    height: 230px;
+    background: #ffffff;
+    border-right: 1px solid #e7e7e7;
+}
+section .miao_shop .miaosha_shop5{
+    width: 190px;
+    height: 230px;
+    background: #ffffff;
+}
+/*第一张图片的秒杀*/
+.miao_shop .miaosha_shop1 .shop_picture{
+    width: 130px;
+    height: 130px;
+
+}
+.miao_shop .miaosha_shop1 .shop_picture img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.miao_shop .miaosha_shop1 .shop_picture img:hover{
+transform:translate(0,-10px);
+    cursor: pointer;
+}
+
+.miao_shop .miaosha_shop1 p{
+    font-size: 13px;
+    margin-top: 20px;
+    color: #999999;
+}
+.miao_shop .miaosha_shop1 h3{
+    font-size: 12px;
+    color: #f10260;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.miao_shop .miaosha_shop1 h3 span{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.miao_shop .miaosha_shop1 h3 label{
+    color: #999999;
+    text-decoration: line-through;
+}
+
+/*第二张图片的秒杀*/
+
+.miao_shop .miaosha_shop2 .shop_picture{
+    width: 130px;
+    height: 130px;
+}
+.miao_shop .miaosha_shop2 .shop_picture img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.miao_shop .miaosha_shop2 .shop_picture img:hover{
+    transform:translate(0,-10px);
+    cursor: pointer;
+}
+.miao_shop .miaosha_shop2 p{
+    font-size: 13px;
+    margin-top: 20px;
+    color: #999999;
+}
+.miao_shop .miaosha_shop2 h3{
+    font-size: 11px;
+    color: #f10260;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.miao_shop .miaosha_shop2 h3 span{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.miao_shop .miaosha_shop2 h3 label{
+    color: #999999;
+    text-decoration: line-through;
+}
+
+/*第三张图片的秒杀*/
+
+.miao_shop .miaosha_shop3 .shop_picture{
+    width: 130px;
+    height: 130px;
+}
+.miao_shop .miaosha_shop3 .shop_picture img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.miao_shop .miaosha_shop3 .shop_picture img:hover{
+    transform:translate(0,-10px);
+    cursor: pointer;
+}
+.miao_shop .miaosha_shop3 p{
+    font-size: 13px;
+    margin-top: 20px;
+    color: #999999;
+}
+.miao_shop .miaosha_shop3 h3{
+    font-size: 11px;
+    color: #f10260;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.miao_shop .miaosha_shop3 h3 span{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.miao_shop .miaosha_shop3 h3 label{
+    color: #999999;
+    text-decoration: line-through;
+}
+
+/*第四张图片的秒杀*/
+
+.miao_shop .miaosha_shop4 .shop_picture{
+    width: 130px;
+    height: 130px;
+}
+.miao_shop .miaosha_shop4 .shop_picture img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.miao_shop .miaosha_shop4 .shop_picture img:hover{
+    transform:translate(0,-10px);
+    cursor: pointer;
+}
+.miao_shop .miaosha_shop4 p{
+    font-size: 12px;
+    margin-top: 20px;
+    color: #999999;
+}
+.miao_shop .miaosha_shop4 h3{
+    font-size: 11px;
+    color: #f10260;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.miao_shop .miaosha_shop4 h3 span{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.miao_shop .miaosha_shop4 h3 label{
+    color: #999999;
+    text-decoration: line-through;
+}
+
+/*第五章图片的秒杀*/
+
+.miao_shop .miaosha_shop5 .shop_picture{
+    width: 130px;
+    height: 130px;
+}
+.miao_shop .miaosha_shop5 .shop_picture img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.miao_shop .miaosha_shop5 .shop_picture img:hover{
+    transform:translate(0,-10px);
+    cursor: pointer;
+}
+.miao_shop .miaosha_shop5 p{
+    font-size: 13px;
+    margin-top: 20px;
+    color: #999999;
+}
+.miao_shop .miaosha_shop5 h3{
+    font-size: 11px;
+    color: #f10260;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.miao_shop .miaosha_shop5 h3 span{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.miao_shop .miaosha_shop5 h3 label{
+    color: #999999;
+    text-decoration: line-through;
+}
+/*最右边的图的秒杀*/
+section .section_top .miao_y{
+    width: 180px;
+     height: 225px;
+    float: right;
+}
+/*section中间的部分*/
+section .section_middle{
+    width: 1210px;
+    overflow: hidden;
+    clear: both;
+    margin-top: 30px;
+}
+
+section .section_middle .section_middle_z{
+  width: 393px;
+    float: left;
+}
+section .section_middle .section_middle_z .top_pic{
+    width: 393px;
+    height: 55px;
+    background: #3e8e97;
+}
+section .section_middle_z table{
+    width: 393px;
+   background: #ffffff;
+    border-color: #ffffff;
+}
+section .section_middle_z table td p{
+    width:75px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+section .section_middle_z table td p a{
+    color: #4998a1;
+    font-size: 15px;
+    text-decoration: none;
+}
+section .section_middle_z table td .bao{
+    width: 80px;
+    height: 80px;
+   float: right;
+    margin-top: -30px;
+
+}
+section .section_middle_z table td .bao img:hover{
+    transform:translate(-10px,0px);
+
+}
+
+/*section中间的部分*/
+section .section_middle .section_middle_c{
+    width: 393px;
+    height: 408px;
+    background: #ffffff;
+    float: left;
+    margin-left: 13px;
+}
+
+section .section_middle .section_middle_c .top_pic1{
+    width: 393px;
+    height: 55px;
+    background: #662d72;
+}
+section .section_middle .section_middle_c .phone{
+    width: 370px;
+    height: 160px;
+    margin-left: 10px;
+    margin-top: 13px;
+    border-bottom: 1px solid #dcd5dc;
+}
+section .section_middle .section_middle_c .phone p{
+    margin-left: 20px;
+}
+section .section_middle .section_middle_c .phone p a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+section .section_middle .section_middle_c .phone .phone1{
+    width: 110px;
+    height: 110px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+section .section_middle .section_middle_c .phone .phone2{
+    width: 110px;
+    height: 110px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+section .section_middle .section_middle_c .phone .phone3 {
+    width: 110px;
+    height: 110px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+
+section .section_middle .section_middle_c .ej{
+    width: 370px;
+    height: 160px;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+section .section_middle .section_middle_c .ej p{
+    margin-left: 20px;
+}
+section .section_middle .section_middle_c .ej p a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+section .section_middle .section_middle_c .ej .phone1{
+    width: 110px;
+    height: 110px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+section .section_middle .section_middle_c .ej .phone2{
+    width: 110px;
+    height: 110px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+section .section_middle .section_middle_c .ej .phone3 {
+    width: 110px;
+    height: 110px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+/*中间右边的部分*/
+section .section_middle .section_middle_y{
+    float: right;
+    width: 393px;
+    height: 407px;
+    background: #ffffff;
+}
+section .section_middle .section_middle_y .top_pic2{
+    width: 393px;
+    height: 55px;
+    background: #e66605;
+}
+section .section_middle .section_middle_y .hot_shop .hot_shop_s{
+    width: 373px;
+    height: 30px;
+    border-bottom: 1px solid #dcd5dc;
+    margin-left: 10px;
+}
+section .section_middle .section_middle_y .hot_shop .hot_shop_s ul{
+    list-style: none;
+}
+section .section_middle .section_middle_y .hot_shop .hot_shop_s ul .tong{
+    border-right: solid 1px #dcd5dc;
+}
+section .section_middle .section_middle_y .hot_shop .hot_shop_s ul li{
+    display: inline-block;
+    line-height: 32px;
+     padding-right: 6px;
+    margin-left: 2px;
+}
+
+section .section_middle .section_middle_y .hot_shop .hot_shop_s ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #666666;
+}
+section .section_middle .section_middle_y .hot_shop .hot_shop_s ul li a:hover{
+    color: #e01222;
+    text-decoration: underline;
+}
+
+section .section_middle .section_middle_y .hot_shop .hot_shop_x table{
+    width: 373px;
+    height: 315px;
+    margin-left: 10px;
+    border-color: #ffffff;
+}
+
+section .section_middle_y .hot_shop .hot_shop_x .tang{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+}
+section .section_middle_y .hot_shop .hot_shop_x p{
+    margin-top: 10px;
+    width: 105px;
+    margin-left: 10px;
+}
+section .section_middle_y .hot_shop .hot_shop_x p a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+}
+section .section_middle_y .hot_shop .hot_shop_x p a:hover{
+    color: #e01222;
+}
+/*section中间的第二部分*/
+section .section_second{
+    width: 1210px;
+    clear: both;
+    margin-top: 30px;
+}
+
+section .section_second .second_z{
+    width: 790px;
+    float: left;
+}
+section .section_second .second_z .second_top{
+    position: relative;
+}
+section .section_second .second_z .second_top h2{
+    position: absolute;
+    top:10px;
+    left: 30px;
+}
+section .section_second .second_z .second_top h2 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+section .section_second .second_z .second_top p{
+     position: absolute;
+     right: 30px;
+    top: 20px;
+    width: 120px;
+    background: url("../images/second_09_03.jpg") no-repeat;
+    background-position: 100px 3px;
+}
+section .section_second .second_z .second_top p a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+section .section_second .second_z .second_top .second_picture{
+    width: 790px;
+    height: 55px;
+}
+
+section .section_second .second_z .second_center ul{
+    width: 190px;
+    height: 210px;
+    float: left;
+    padding-left: 6.5px;
+    border-right: 1px solid #e7e7e7;
+    position: relative;
+    background: #ffffff;
+}
+
+section .section_second .second_z .second_center .quan_z{
+   width: 100px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    background: #ffffff;
+    margin-left: 10px;
+}
+
+section .section_second .second_z .second_center .quan_z .quan_z_top{
+    width: 100px;
+    height: 3px;
+    background: #e01222;
+}
+
+section .section_second .second_z .second_center .quan_z_c{
+    width: 100px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.second_z .second_center .quan_z_c span a{
+    color: #e01222;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.second_z .second_center .quan_z_c span i{
+    font-size: 10px;
+}
+.second_z .second_center .quan_z_c p{
+  line-height: 15px;
+}
+
+.second_z .second_center .quan_z_c a{
+    text-decoration: none;
+    color: #e01222;
+    font-size: 13px;
+}
+
+section .section_second .second_z .second_center .quan_z_y{
+    width: 100px;
+    height: 66px;
+    margin-top: 5px;
+    background-image: url("../images/second_10.jpg");
+}
+.second_z .second_center .quan_z_y p{
+    margin-left: 10px;
+    width: 85px;
+    padding-top: 10px;
+}
+.second_z .second_center .quan_z_y p a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+}
+section .section_second .second_z button{
+    width: 100px;
+    height: 23px;
+    background: #e01222;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+section .section_second .second_z .second_center .quan_y{
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    right: 11px;
+    top:30px;
+}
+section .section_second .second_z .second_center .quan_y img:hover{
+    transform:translate(10px,0);
+}
+
+/*section第二部分右边的部分*/
+section .section_second .second_y{
+    width: 390px;
+    height: 265px;
+    float:right;
+    background: #ffffff;
+    position: relative;
+}
+
+section .section_second .second_y_top{
+    position: relative;
+}
+
+section .section_second .second_y_top .second_picture{
+    width: 390px;
+    height: 55px;
+}
+
+section .section_second .second_y_top h2{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+section .section_second .second_y_top h2 a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family:Arial;
+}
+
+section .section_second .second_y_top p{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 100px;
+    background: url("../images/second_09.jpg") no-repeat;
+    background-position: 70px 3px;
+}
+section .section_second .second_y_top p a{
+    text-decoration: none;color: #ffffff;
+}
+/*第二部分右边中间的部分*/
+section .section_second .second_y_center .second_y_top_left{
+    width: 200px;
+    height: 140px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    background: url("../images/second_10_03.jpg");
+}
+
+@-webkit-keyframes  background{
+    0%{
+        background: url("../images/second_10_03.jpg");
+    }
+    30%{
+        background: url("../images/second_10_04.jpg");
+    }
+    20%{
+        background: url("../images/second_11_03.jpg");
+    }
+    80%{
+        background: url("../images/second_12_03.jpg");
+    }
+    100%{
+        background: url("../images/second_13.jpg");
+    }
+}
+.second_y_top_left:hover{
+    -webkit-animation-name:background;
+    -webkit-animation-duration:15s;
+    -webkit-animation-timing-function:linear;
+    /*无限重复播放*/
+    -webkit-animation-iteration-count:infinite;
+}
+section .section_second .second_y_center .second_y_top_right{
+    width: 150px;
+    height: 140px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+section .section_second .second_y_center .second_y_top_right p a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+
+}
+
+section .section_second .second_y_center .second_y_top_right h3 a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #999999;
+}
+section .section_second .second_y_center .second_y_top_right h3 span{
+    color: #4f629f;
+}
+section .section_second .second_y_center .second_y_top_right label{
+    color: #999999;
+    font-size: 13px;
+}
+
+section .section_second .second_y_center .second_y_top_right label img{
+    padding-right: 5px;
+}
+
+section .section_second .second_y .yuan{
+    width: 80px;
+    height: 8px;
+    position: absolute;
+    clear:  both;
+    left: 150px;
+   bottom: 25px;
+}
+/*分界图片的内容*/
+.fenjie{
+    width: 100%;
+    height: 100px;
+    background: #d5d5d5;
+    clear: both;
+    margin-top: 30px;
+}
+.fenjie1{
+    margin-left: 80px;
+    display: flex;
+}
+.fenjie ul{
+    width: 396px;
+    height: 100px;
+}
+
+.fenjie ul img:hover{
+    background: #e0e0e0;
+}
+/*享品质的内容*/
+
+.enjoy_quality{
+    width: 1210px;
+    height: 570px;
+    overflow: hidden;
+    clear: both;
+    margin: 30px auto 0 auto;
+}
+/*享品质的上面的内容*/
+.enjoy_quality .enjoy_top{
+    width: 1210px;
+    height: 30px;
+}
+.enjoy_quality .enjoy_top p{
+   text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    background: url("../images/enjoy_03.jpg") repeat-x;
+    background-position: 0 13px;
+}
+
+/*享品质下面的内容*/
+.enjoy_quality .enjoy_bottom{
+    width: 1210px;
+    height: 600px;
+    margin-top: 10px;
+}
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left{
+    width: 800px;
+    height:530px;
+    float: left;
+}
+.enjoy_quality .enjoy_bottom .enjoy_bottom_right{
+    width:400px;
+    height: 348px;
+    float: right;
+}
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left ul{
+   list-style: none;
+}
+
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left ul li{
+    float: left;
+    width: 390px;
+    height: 170px;
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+/*第一张图*/
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left ul li .position{
+    width:140px;
+    height: 170px;
+    background: #72bb90;
+    position: absolute;
+    left: 0;top: 0;
+    opacity: 0.9;
+}
+/*通用的字体的样式*/
+.enjoy_bottom .enjoy_bottom_left h3{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.enjoy_bottom .enjoy_bottom_left p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100px;
+}
+/*第二张图*/
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left ul li .position1{
+    width:140px;
+    height: 170px;
+    background: #ddd279;
+    position: absolute;
+    left: 0;top: 0;
+    opacity: 0.9;
+}
+/*第三张图片*/
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left ul li .position2{
+    width:140px;
+    height: 170px;
+    background: #5d5566;
+    position: absolute;
+    left: 0;top: 0;
+    opacity: 0.9;
+}
+/*第四章图片*/
+
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left ul li .position3{
+    width:140px;
+    height: 170px;
+    background: #498c94;
+    position: absolute;
+    left: 0;top: 0;
+    opacity: 0.9;
+}
+/*第五张图片*/
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left ul li .position4{
+    width:140px;
+    height: 170px;
+    background: #d78e28;
+    position: absolute;
+    left: 0;top: 0;
+    opacity: 0.9;
+}
+
+/*第六张图片*/
+.enjoy_quality .enjoy_bottom .enjoy_bottom_left ul li .position5{
+    width:140px;
+    height: 170px;
+    background: #866350;
+    position: absolute;
+    left: 0;top: 0;
+    opacity: 0.9;
+}
+
+.enjoy_quality .enjoy_bottom .enjoy_bottom_right .enjoy_bottom_s{
+    width: 390px;
+    height: 348px;
+    position: relative;
+}
+.enjoy_quality .enjoy_bottom .enjoy_bottom_right .enjoy_bottom_s .black{
+    width: 400px;
+    height: 40px;
+    background: #000000;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+}
+.enjoy_bottom_right .enjoy_bottom_s .black h3{
+    color: #ffffff;
+    font-weight: lighter;
+    width: 100px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.enjoy_bottom_right .enjoy_bottom_s .black span{
+    position: absolute;
+    right: 30px;
+    top:9px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.enjoy_bottom_right .enjoy_bottom_s .black img{
+
+    position: absolute;
+padding-left: 5px;
+    top: 2px;
+}
+
+
+.enjoy_quality .enjoy_bottom .enjoy_bottom_right .enjoy_bottom_x{
+    width: 400px;
+    height: 170px;
+    margin-top: 12px;
+}
+
+.enjoy_quality .enjoy_bottom .enjoy_bottom_right .enjoy_bottom_x .bottom_x_picture1{
+    width: 190px;
+    height: 170px;
+    float: left;
+    position: relative;
+}
+.enjoy_quality .enjoy_bottom .enjoy_bottom_right .enjoy_bottom_x .bottom_x_picture2{
+    width: 190px;
+    height: 170px;
+    float: right;
+    position: relative;
+}
+.enjoy_bottom_x .bottom_x_picture1 .position6{
+    width: 190px;
+    height: 90px;
+    background: #b0463f;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+}
+.enjoy_bottom_x h4{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.enjoy_bottom_x p{
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 5px;
+    width: 100px;
+}
+
+.enjoy_bottom_x .bottom_x_picture2 .position7{
+    width: 190px;
+    height: 90px;
+    background: #6e356e;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+}
+/*爱生活的部分*/
+.love_life{
+    width: 1210px;
+    overflow: hidden;
+    clear: both;
+    margin: 30px auto;
+}
+
+.love_life .love_life_top{
+    width: 1210px;
+    height: 30px;
+}
+.love_life .love_life_top p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    background: url("../images/enjoy_03.jpg") repeat-x;
+    background-position: 0 13px;
+}
+
+/*爱生活左边的部分*/
+.love_life .love_life_left{
+    width: 600px;
+    float: left;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+.love_life .love_life_left .love_life_left_s{
+    width: 600px;
+    height: 55px;
+    background: #984576;
+}
+.love_life .love_life_left .love_life_left_s ul{
+    list-style: none;
+}
+
+.love_life .love_life_left .love_life_left_s li{
+    display: inline-block;
+    padding-left:10px;
+    line-height: 50px;
+}
+.love_life .love_life_left .love_life_left_s .guang{
+    color: #ffffff;
+    font-size:20px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+.love_life .love_life_left .love_life_left_s .ma{
+    padding-left: 10px;
+}
+.love_life .love_life_left .love_life_left_s .squre{
+   margin-left: 130px;
+
+}
+
+.love_life .love_life_left .love_life_left_s .squre a{
+    border: 2px solid #c187af;
+    background: #ae6991;
+    text-decoration: none;
+    color: #ffffff;
+   font-size: 12px;
+    padding: 3px 8px 3px 8px;
+}
+.love_life .love_life_left .love_life_left_s .squre a:hover{
+    border-color: #ffffff;
+}
+.love_life .love_life_left .love_life_left_s .squre1 a{
+    border: 2px solid #c187af;
+    background: #ae6991;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 3px 8px 3px 8px;
+}
+.love_life .love_life_left .love_life_left_s .squre1 a:hover{
+    border-color: #ffffff;
+}
+
+/*爱生活左边->中间的部分*/
+.love_life .love_life_left .love_life_z{
+   width: 590px;
+    overflow: hidden;
+    clear: both;
+    margin-left: 5px;
+}
+.love_life .love_life_left .love_life_z .love_life_z_left{
+    width: 193px;
+    height: 260px;
+    float: left;
+}
+.love_life .love_life_left .love_life_z .love_life_z_right{
+    width: 390px;
+    height: 260px;
+    float: right;
+}
+.love_life .love_life_left .love_life_z .love_life_z_right table{
+    width: 390px;
+    height: 260px;
+    border-color: #ffffff;
+}
+.love_life .love_life_left .love_life_z .love_life_z_right table td{
+    position: relative;
+}
+.love_life_z .love_life_z_right table p{
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.love_life_z .love_life_z_right table p a{
+    text-decoration:none;
+    color: #974676;
+    font-size: 14px;
+}
+.love_life_z .love_life_z_right table p span{
+    font-size: 12px;
+    color: #666666;
+}
+.love_life_z .love_life_z_right table .img{
+    float: right;
+    margin-top: 20px;
+
+}
+.love_life_z .love_life_z_right table .img img:hover{
+    transform:translate(-10px,0);
+}
+/*爱生活左边->下边的部分*/
+.love_life .love_life_left .love_life_x{
+    width: 590px;
+    margin-left: 5px;
+}
+
+/*爱生活左边->下边的部分*/
+.love_life .love_life_left .love_life_x .love_life_x_s{
+    width: 590px;
+}
+.love_life .love_life_left .love_life_x .love_life_x_s ul{
+   list-style: none;
+}
+.love_life .love_life_left .love_life_x .love_life_x_s ul li{
+    float: left;
+    margin: 10px 3px 0 0;
+}
+.love_life .love_life_left .love_life_x .love_life_x_x{
+   width: 590px;
+    height: 40px;
+}
+.love_life .love_life_left .love_life_x .love_life_x_x ul{
+    list-style: none;
+}
+.love_life .love_life_left .love_life_x .love_life_x_x ul li{
+    float: left;
+    margin: 10px 15px 0 0;
+    padding: 0 11px 0 0;
+    border-right: 1px solid #e6e6e6;
+
+}
+
+
+/*爱生活右边的部分*/
+.love_life .love_life_right{
+    width: 600px;
+    float: right;
+    margin-top: 20px;
+    background: #ffffff;
+}
+/*爱生活右边上面的部分*/
+.love_life .love_life_right .love_life_right_s{
+    width: 600px;
+    height: 55px;
+    background: #cc365d;
+}
+.love_life .love_life_right .love_life_right_s ul{
+    list-style: none;
+}
+.love_life .love_life_right .love_life_right_s li{
+    display: inline-block;
+    padding-left:10px;
+    line-height: 50px;
+}
+.love_life .love_life_right .love_life_right_s .guang{
+    color: #ffffff;
+    font-size:20px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+.love_life .love_life_right .love_life_right_s .squre{
+    margin-left: 130px;
+
+}
+
+.love_life .love_life_right .love_life_right_s .squre a{
+    border: 2px solid #de7b95;
+    background: #d15c75;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 3px 8px 3px 8px;
+}
+.love_life .love_life_right .love_life_right_s .squre a:hover{
+    border-color: #ffffff;
+}
+.love_life .love_life_right .love_life_right_s .squre1 a{
+    border: 2px solid #de7b95;
+    background: #d15c75;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 3px 8px 3px 8px;
+}
+.love_life .love_life_right .love_life_right_s .squre1 a:hover{
+    border-color: #ffffff;
+}
+/*爱生活中间的部分*/
+.love_life .love_life_left .love_life_right_z{
+    width: 590px;
+    overflow: hidden;
+    clear: both;
+    margin-left: 5px;
+}
+.love_life .love_life_right .love_life_right_z .love_life_right_z_left{
+    width: 193px;
+    height: 260px;
+    float: left;
+}
+.love_life .love_life_right .love_life_right_z .love_life_right_z_right{
+    width: 390px;
+    height: 260px;
+    margin-right: 10px;
+    float: right;
+}
+.love_life .love_life_right .love_life_right_z .love_life_right_z_right table{
+    width: 390px;
+    height: 260px;
+    border-color: #ffffff;
+}
+.love_life .love_life_right .love_life_right_z .love_life_right_z_right table td{
+    position: relative;
+}
+.love_life .love_life_right .love_life_right_z .love_life_right_z_right table p{
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.love_life .love_life_right .love_life_right_z .love_life_right_z_right table p a{
+    text-decoration:none;
+    color: #cd375e;
+    font-size: 14px;
+}
+.love_life .love_life_right .love_life_right_z .love_life_right_z_right table p span{
+    font-size: 12px;
+    color: #666666;
+}
+
+.love_life .love_life_right .love_life_right_z .love_life_right_z_right table .img{
+    float: right;
+    margin-top: 20px;
+
+}
+.love_life .love_life_right .love_life_right_z .love_life_right_z_right table .img img:hover{
+    transform:translate(-10px,0);
+}
+
+
+/*爱生活右边->下边的部分*/
+.love_life .love_life_right .love_life_x{
+    width: 590px;
+    margin-left: 5px;
+}
+
+/*爱生活左边->下边的部分*/
+.love_life .love_life_right .love_life_x .love_life_x_s{
+    width: 590px;
+}
+.love_life .love_life_right .love_life_x .love_life_x_s ul{
+    list-style: none;
+}
+.love_life .love_life_right .love_life_x .love_life_x_s ul li{
+    float: left;
+    margin: 10px 3px 0 0;
+}
+.love_life .love_life_right .love_life_x .love_life_x_x{
+    width: 590px;
+    height: 40px;
+}
+.love_life .love_life_right .love_life_x .love_life_x_x ul{
+    list-style: none;
+}
+.love_life .love_life_right .love_life_x .love_life_x_x ul li{
+    float: left;
+    margin: 10px 15px 0 0;
+    padding: 0 11px 0 0;
+    border-right: 1px solid #e6e6e6;
+
+}
+
+
+footer{
+    width: 100%;
+    height: 500px;
+    background: #eaeaea;
+}
+
+footer .jiexian1{
+    width: 100%;
+    height:90px;
+    margin: 0 auto;
+    border-bottom: solid 1px #dedede;
+}
+
+footer .jiexian1 ul{
+    list-style: none;
+}
+footer .jiexian1 ul li{
+    display: inline-block;
+    line-height: 100px;
+    padding-left: 50px;
+    margin:0 40px 0 60px;
+    font-weight: 600;
+    font-size: 20px;
+}
+footer .jiexian1 ul .bg_picture1{
+    background: url("../images/sheng_03.jpg") no-repeat;
+    background-position: 0 30px;
+}
+footer .jiexian1 ul .bg_picture2{
+    background: url("../images/sheng_05.jpg") no-repeat;
+    background-position: 0 30px;
+}
+footer .jiexian1 ul .bg_picture3{
+    background: url("../images/sheng_07.jpg") no-repeat;
+    background-position: 0 30px;
+}
+footer .jiexian1 ul .bg_picture4{
+    background: url("../images/sheng_09.jpg") no-repeat;
+    background-position: 0 30px;
+}
+
+/*footer上面的部分*/
+footer .footer_top{
+    width: 1210px;
+    height: 200px;
+    margin: 10px auto;
+    border-bottom: 1px solid #dedede;
+}
+footer .footer_top ul{
+    list-style: none;
+}
+footer .footer_top ul .first{
+    width: 200px;
+    float: left;
+}
+footer .footer_top .first .big a{
+    font-size: 15px;
+    padding-left: 5px;
+    color: #000000;
+    font-weight: 600;
+}
+footer .footer_top .first .big{
+    padding-bottom: 5px;
+}
+footer .footer_top ul .first li{
+    line-height: 23px;
+    margin-left: 20px;
+}
+
+footer .footer_top ul .first li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #666666;
+}
+footer .footer_top ul .first li a:hover{
+    color: #c81623;
+}
+
+footer .footer_center{
+    width: 1210px;
+    margin: 10px auto;
+}
+
+footer .footer_center P{
+    font-size: 13px;
+    margin: 20px 0 0 70px;
+    color: #666666;
+}
+footer .footer_center .second{
+    margin-top: 10px;
+    margin-left: 190px;
+
+}
+footer .footer_center .second span{
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #666666;
+    font-size: 12px;
+}
+footer .footer_center .second label{
+    padding-left: 340px;
+    color:#666666 ;
+}
+/*footer下面的部分*/
+footer .footer_bottom{
+    width: 1000px;
+    margin: 10px auto;
+    margin-left: 200px;
+}
+
+footer .footer_bottom img{
+    padding-left: 10px;
+}

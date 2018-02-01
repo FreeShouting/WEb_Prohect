@@ -1,0 +1,310 @@
+/**
+ * Created by zwl on 2017/8/12.
+ */
+/*登录的页面开始*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/*header部分开始*/
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+    box-shadow: 0 0 10px #f1f1f1;
+
+}
+
+header .logo{
+    width:158px;
+    height: 42px;
+   position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+header span{
+    position: absolute;
+     top:20px;
+    left: 220px;
+    font-size: 30px;
+}
+header p{
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+    color: #999999;
+    font-size: 17px;
+}
+header p a{
+  color: #000000;
+
+}
+
+section {
+    width: 1210px;
+    height: 620px;
+
+    margin: 20px  auto;
+    border-bottom: 1px solid #dddddd;
+}
+
+section .section_left{
+    width: 600px;
+    height: 600px;
+    border-right: 1px solid #f2f2f2;
+    float: left;
+
+}
+section .section_right{
+    width: 400px;
+    height: 500px;
+    float: right;
+    margin-right: 110px;
+}
+/*第一部分*/
+section .section_left .one{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #dddddd;
+    margin:30px 0 0 80px;
+    position:relative;
+}
+section .section_left .one input{
+    margin-left: 90px;
+    border: none;
+    outline: none;
+}
+
+input::-webkit-input-placeholder{
+    color: #cccccc;
+    opacity:1;
+}
+section .section_left .one span{
+    padding: 14px;
+    position: absolute;
+    top: 0;
+}
+/*第二部分*/
+section .section_left .second{
+    width: 400px;
+    height: 55px;
+    border: 1px solid #dddddd;
+    margin:30px 0 0 80px;
+    position:relative;
+}
+
+section .section_left .second span{
+    padding: 17px;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+}
+
+section .section_left .second input{
+    margin-left: 95px;
+    border: none;
+    outline: none;
+}
+/*第三个部分*/
+section .section_left .third{
+    width: 400px;
+    height: 60px;
+    border: 1px solid #dddddd;
+    margin:30px 0 0 80px;
+    position:relative;
+
+}
+section .section_left .third span{
+    padding: 21px 14px 20px 14px;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    border-right: 1px solid #dddddd;
+
+}
+section .section_left .third input{
+    margin-left: 98px;
+    outline: none;
+    border: none;
+}
+
+section .section_left .third label{
+    position: relative;
+    left: 350px;
+}
+
+section .section_left .third label a{
+    font-size: 13px;
+}
+
+section .section_left .third label a:hover{
+    text-decoration: underline;
+}
+
+
+/*第四部分的内容*/
+section .section_left .four{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #dddddd;
+    margin:30px 0 0 80px;
+    position:relative;
+}
+section .section_left .four input{
+    margin-left: 90px;
+    border: none;
+    outline: none;
+}
+
+section .section_left .four span {
+    padding: 14px;
+    position: absolute;
+    top: 0;
+}
+section .section_left .four img{
+    right: 20px;
+    position: absolute;
+    top: 3px;
+}
+
+/*第五部分*/
+section .section_left .five{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #dddddd;
+    margin:30px 0 0 80px;
+    position:relative;
+}
+section .section_left .five input{
+    margin-left: 90px;
+    border: none;
+    outline: none;
+}
+
+section .section_left .five span {
+    padding: 14px;
+    position: absolute;
+    font-size: 14px;
+    top: 0;
+}
+section .section_left .five button{
+    background: #f2f2f2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 13px;
+    margin-top: 3px;
+    margin-left: 2px;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+/*第六个部分*/
+section .section_left .six{
+    margin-left:80px;
+    margin-top: 10px;
+
+}
+
+section .section_left .six label{
+    font-size: 13px;
+}
+section .section_left .six label a:hover{
+    text-decoration: underline;
+}
+section button{
+    padding: 10px 170px 10px 170px;
+    margin-top: 10px;
+    margin-left: 80px;
+    background: #ee2222;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*section右边的部分*/
+section .section_right .bz{
+    width: 200px;
+    height: 80px;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+}
+section .section_right .bz .bz1{
+
+    width: 170px;
+    height: 30px;
+   position: absolute;
+    top: 25px;
+}
+section .section_right .bz span{
+    position: absolute;
+    right: 50px;
+    top:30px;
+}
+section .section_right .bz span:hover{
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+section .section_right span a{
+    color: #000000;
+    font-size: 15px;
+}
+
+/*第二部分*/
+section .section_right .bz2{
+    width: 200px;
+    height: 80px;
+    position: relative;
+}
+
+section .section_right .bz2 .bz3{
+    width: 170px;
+    height: 30px;
+    margin-top: 25px;
+    position: absolute;
+    top: 10px;
+}
+
+section .section_right .bz2 span{
+    position: absolute;
+    left: 55px;
+    top: 25px;
+}
+section .section_right .bz2 span a{
+    color: #666666;
+}
+section .section_right .bz2 span a:hover{
+    font-size: 17px;
+    color: #000000;
+}
+
+
+
+/*footer部分*/
+footer{
+    width: 1210px;
+    margin: 10px auto;
+}
+
+footer p{
+    margin-left: 290px;
+    font-size: 13px;
+    color: #999999;
+}
+footer .foot_litter{
+    margin-top: 10px;
+    margin-left: 490px;
+}
+
+
+
+
+

@@ -1,0 +1,388 @@
+/**
+ * Created by zwl on 2017/8/13.
+ */
+/**
+ * Created by zwl on 2017/8/13.
+ */
+/*登录页面的部分开始*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/*header部分开始*/
+header{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative
+}
+
+header .logo{
+    width:158px;
+    height: 42px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+header span{
+    position: absolute;
+    top:20px;
+    left: 220px;
+    font-size: 30px;
+}
+header p{
+    position: absolute;
+    right: 70px;
+    bottom: 2px;
+    color: #999999;
+    font-size: 17px;
+    width: 200px;
+    height: 25px;
+    background: url("../images/new_03.jpg") no-repeat;
+    background-position: 0,5px;
+}
+
+header p a{
+    font-size: 13px;
+    color: #999999;
+    padding-left: 25px;
+}
+header p a:hover{
+    color: #e93854;
+    text-decoration: underline;
+}
+
+
+section{
+    width: 100%;
+    height: 520px;
+    background: #e93854;
+    position: relative;
+}
+
+section .logo{
+    width: 990px;
+    height: 475px;
+    position: absolute;
+    left: 130px;
+}
+
+section .right{
+    width: 350px;
+
+    background: #ffffff;
+    position: absolute;
+    right: 200px;
+    top: 50px;
+}
+/*section的头部*/
+section .right .top{
+    width: 350px;
+    height: 50px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+section .right .top ul{
+    list-style: none;
+}
+
+section .right .top ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding:3px 35px 3px 20px;
+    position: relative;
+}
+
+/*section .right .top .login_hidden{*/
+/*height: 20px;*/
+/*width: 20px;*/
+/*border: 1px solid darkblue;*/
+/*display: none;*/
+/*}*/
+
+/*section .right .top .user:hover .login_hidden{*/
+/*display: block;*/
+/*}*/
+
+
+section .right .top .sao{
+    padding-right: 45px;
+    padding-left: 25px;
+    border-right: solid 1px #f4f4f4;
+}
+
+/*section .right .top ul li a{*/
+/*font-size: 20px;*/
+/*color: #666666;*/
+/*font-weight: 600;*/
+/*}*/
+section .right .top ul .sao a{
+    color: #666666;
+    font-size: 20px;
+    font-weight: 600;
+}
+section .right .top ul .user a{
+    color: #666666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*section .right .top ul .user a.active :active{*/
+    /*color: #e4393c;*/
+/*}*/
+
+section .right .top ul .user a.active{
+    color: #e4393c;
+}
+section .right .top ul .sao a.active{
+    color: #e4393c;
+}
+
+section .right .top ul .user>a:hover{
+    color:#e4393c;
+}
+section .right .top ul .sao>a:hover{
+    color:#e4393c;
+}
+
+
+
+
+
+
+/*section的中间的部分*/
+section .right .center{
+    width: 320px;
+    height: 120px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+section .right .center .email{
+    width: 290px;
+    height: 40px;
+    border: 1px solid #bdbdbd;
+    position: relative;
+    margin-left: 20px;
+}
+section .right .center .email input{
+    height: 36px;
+    margin-left: 50px;
+    position: absolute;
+    top: 0;
+    border: none;
+    outline: none;
+}
+
+section .right .center .email .email_user{
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3;
+    position: relative;
+}
+section .right .center .email span{
+  position: absolute;
+    left: 12px;
+    top: 9px;
+}
+/*密码的输入框*/
+section .right .center .password{
+    width: 290px;
+    height: 40px;
+    margin-top: 25px;
+    border: 1px solid #bdbdbd;
+    position: relative;
+    margin-left: 20px;
+}
+
+section .right .center .password input{
+    height: 36px;
+    margin-left: 50px;
+    position: absolute;
+    top: 0;
+    border: none;
+    outline: none;
+}
+
+section .right .center .password .password_user{
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3;
+    position: relative;
+}
+
+section .right .center .password span{
+    position: absolute;
+    left: 12px;
+    top: 9px;
+}
+
+/*section中间的下部分*/
+section .right .center_x{
+    width: 300px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+section .right .center_x span{
+    font-size: 14px;
+    padding-left: 240px;
+}
+
+section .right .center_x span a{
+    color: #e4393c;
+}
+section .right .center_x span a:hover{
+    text-decoration: underline;
+}
+
+/*按钮部分*/
+
+section .right .center_bottom{
+    width: 350px;
+    height: 40px;
+    margin-top: 15px;
+}
+section .right .center_bottom button{
+    width: 290px;
+    height: 40px;
+    margin-left: 30px;
+    background: #e4393c;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+/*.bottom{*/
+/*height: 50px;*/
+/*width: 100%;*/
+/*position: relative;*/
+/*}*/
+/*.bottom:before{*/
+/*content: "";*/
+/*height: 1px;*/
+/*width: 100%;*/
+/*background-color: green;*/
+/*position: absolute;*/
+/*left: 0;bottom: 0;*/
+/*transform:scaleY(0.2);*/
+/*}*/
+/*bottom底部的部分*/
+section .right .bottom{
+    width: 350px;
+    height: 40px;
+    background: #fcfcfc;
+    margin-top: 22px;
+    border-top: solid 1px #f4f4f4;
+}
+
+section .right .bottom ul{
+    list-style: none;
+}
+
+section .right .bottom ul li{
+    display: inline-block;
+    padding: 2px 5px 5px 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+section .right .bottom ul .d{
+    background: url("../images/small_tb_27.jpg") no-repeat;
+    background-position: 0,7px;
+    padding-right: 15px;
+    border-right: 1px solid #f4f4f4;
+}
+section .right .bottom ul .d :hover{
+    color: #e4393c;
+    text-decoration: underline;
+}
+
+section .right .bottom ul .e{
+    background: url("../images/small_tb_30.jpg") no-repeat;
+    background-position: 0,7px;
+}
+
+
+section .right .bottom ul .e :hover{
+    color: #e4393c;
+    text-decoration: underline;
+}
+
+section .right .bottom ul li a{
+    font-size: 12px;
+}
+
+section .right .bottom ul .f{
+    margin-left: 120px;
+    background: url("../images/small_33.jpg") no-repeat;
+    background-position: 0,7px;
+}
+section .right .bottom ul .f a{
+    font-size: 14px;
+    color: #b61d1d;
+}
+
+/*footer部分开始*/
+footer{
+    width: 1210px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+footer .footer_top{
+    width: 900px;
+    height: 35px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+
+footer .footer_top ul{
+    list-style: none;
+    text-align: center;
+}
+footer .footer_top ul li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0 5px 0 0;
+    border-right: solid 1px #dddddd;
+}
+
+footer .footer_top ul .no{
+    border: 0;
+}
+
+footer .footer_top ul li a{
+    font-size: 14px;
+    color: #666666;
+}
+footer .footer_top ul li a:hover{
+    color: #e93854;
+}
+
+footer span{
+    color: #666666;
+    font-size: 12px;
+    padding-left: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
